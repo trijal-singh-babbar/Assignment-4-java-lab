@@ -21,7 +21,7 @@ class Main
 		System.out.println("--------Distribute cards for game to 3 players----------");
 		d.cardPlayers();
 		System.out.println("--------Search for a Card----------");
-        d.searchCard("A", "Spades"); // Example: Searching for Ace of Spades
+        d.findCard("A", "Spades"); // Example: Searching for Ace of Spades
 		System.out.println("--------Compare Two Cards----------");
         Card card1 = new Card("K", "Hearts");
         Card card2 = new Card("K", "Diamonds");

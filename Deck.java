@@ -38,4 +38,18 @@ class Deck
 	}
 	
 	// method to select 2 cards at random 
+	
+	public void randomCards()
+	{
+		int i=0;
+		for(Card card : deck)
+		{
+			i++;
+			System.out.println(card);
+			if(i==2)
+			{
+				break;
+			}
+		}
+	}
 }

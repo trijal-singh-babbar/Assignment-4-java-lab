@@ -99,16 +99,30 @@ class Deck
 		{
 			System.out.println(card);
 		}
-		
-		public boolean findCard(String rank, String suit) {
-        for (Card card : deck) {
-            if (card.rank.equals(rank) && card.suit.equals(suit)) {
+	}
+	public boolean findCard(String rank, String suit) 
+	{
+		for (Card card : deck) 
+		{
+            if (card.rank.equals(rank) && card.suit.equals(suit)) 
+			{
                 System.out.println("Card found: " + card);
                 return true;
             }
-        }
+		}
         System.out.println("Card not found.");
         return false;
-    }
 	}
+	
+	public boolean compareCard(Card card1, Card card2) 
+	{
+        if (card1.rank.equals(card2.rank)) 
+		{
+            System.out.println("Both cards have the same rank: " + card1.rank);
+            return true;
+        } else {
+            System.out.println("Cards have different ranks: " + card1 + " vs " + card2);
+            return false;
+        }
+    }
 }

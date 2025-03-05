@@ -31,4 +31,11 @@ class Deck
 			System.out.println(card);
 		}
 	}
+	
+	public void shuffleDeck()
+	{
+		Collections.shuffle(deck);
+	}
+	
+	// method to select 2 cards at random 
 }

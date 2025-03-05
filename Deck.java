@@ -99,4 +99,16 @@ class Deck
 		{
 			System.out.println(card);
 		}
+		
+		public boolean findCard(String rank, String suit) {
+        for (Card card : deck) {
+            if (card.rank.equals(rank) && card.suit.equals(suit)) {
+                System.out.println("Card found: " + card);
+                return true;
+            }
+        }
+        System.out.println("Card not found.");
+        return false;
+    }
+	}
 }
